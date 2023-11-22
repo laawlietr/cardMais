@@ -22,15 +22,24 @@
 
   <script src="./js/bootstrap.js"></script>
   <script src="./js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
   <header>
-    <div class="container text-center" style="padding-top: 10px;">
-      <p>Rua Salete, 200 --- email@cardiologica.net --- (11) 2139-6900</p>
+    <div class="container text-end" style="padding-top: 10px; color: #b5221b;">
+      <p>
+        <i class="bi bi-geo-alt-fill me-5"> Rua Salete, 200 </i>
+        
+        <i class="bi bi-envelope-fill me-5"> email@cardiologica.net</i> 
+        
+        <i class="bi bi-telephone-fill me-5"> (11) 2139-6900</i>
+        </p>
     </div>
   </header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="nav1">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Card+</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -43,20 +52,20 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quem Somos</a>
+            <a class="nav-link" href="#divSobre">Quem Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Duvidas</a>
+            <a class="nav-link" href="#divEspecialidade">Especialidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Parceiros</a>
+            <a class="nav-link" href="#divParceiro">Parceiros</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-
+<div data-bs-spy="scroll" data-bs-target="#nav1" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -119,7 +128,7 @@
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
+    <div class="row" id="miViVa">
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
           role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -156,7 +165,7 @@
 
     <hr class="featurette-divider" style="color: red;">
 
-    <div class="row featurette">
+    <div class="row featurette" id="divSobre">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Sobre o<span style="color: #b5221b;"> Card+</span></h2>
         <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.
@@ -175,7 +184,7 @@
 
     <hr class="featurette-divider" style="color: red;">
 
-    <div class="row featurette">
+    <div class="row featurette" id="divEspecialidade">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Especialidades</span></h2>
         <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
@@ -194,7 +203,7 @@
 
     <hr class="featurette-divider" style="color: red;">
 
-    <div class="row featurette">
+    <div class="row featurette" id="divParceiro">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Parceiros</span></h2>
         <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
@@ -226,7 +235,7 @@
   </a>
 
 
-
+</div>
 
 
 
@@ -236,23 +245,23 @@
   <section class="d-flex justify-content-center justify-content-lg-between p-4">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
-      <span>Siga-nos nas Redes Sociais</span>
+      <span><b>Siga-nos nas Redes Sociais</b></span>
     </div>
     <!-- Left -->
 
     <!-- Right -->
     <div>
       <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
+        <i class="bi bi-facebook" style="color: #b5221b;"></i>
       </a>
       <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
+        <i class="bi bi-twitter" style="color: #b5221b;"></i>
       </a>
       <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
+        <i class="bi bi-google" style="color: #b5221b;"></i>
       </a>
       <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
+        <i class="bi bi-instagram" style="color: #b5221b;"></i>
       </a>
     </div>
     <!-- Right -->
@@ -277,16 +286,16 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
-          <p><i class="fas fa-home me-3"></i>Rua Salete, 200, Santana, SP - SP</p>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>Rua Salete, 200, Santana, SP - SP</p>
           <p>
-            <i class="fas fa-envelope me-3"></i>
+            <i class="bi bi-envelope-fill me-2"></i>
             info@example.com
           </p>
-          <p><i class="fas fa-phone me-3"></i>(11) 2139-6900</p>
-          <p><i class="fas fa-print me-3"></i>(11) 91111-1111 Whats</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>(11) 2139-6900</p>
+          <p><i class="bi bi-phone-fill me-2"></i>(11) 91111-1111 Whats</p>
         </div>
         <!-- Grid column -->
       </div>
@@ -296,10 +305,10 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: #b5221b;">
-    © 2021 Copyright:
+  <!-- <div class="text-center p-4" style="background-color: #b5221b;">
+    © 2023 Copyright:
     <a class="text-reset fw-bold" href="">Cardiológica</a>
-  </div>
+  </div> -->
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
