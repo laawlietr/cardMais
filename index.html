@@ -16,7 +16,7 @@
   <meta name="site_name" property="og:site_name" content="CardMais" />
   <meta name="locale" property="og:locale" content="pt_BR" />
 
-  <link rel="icon" type="image/jpg" href="./cardMaisLogo.png" />
+  <link rel="icon" type="image/jpg" href="./imgs/cardMaisLogo.png" />
 
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./style.css">
@@ -31,16 +31,21 @@
 <body>
   <header>
     <div class="container d-flex flex-row align-items-center justify-content-end py-3" style="color: #b5221b;">
-      <div class="px-2"><i class="bi bi-geo-alt-fill"></i><a class="text-reset" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Cardiol%C3%B3gica+Medicina+Diagn%C3%B3stica/@-23.5017891,-46.6296408,17z/data=!3m1!5s0x94cef62912572b05:0xe31bc360c7afa97c!4m10!1m2!2m1!1scardiol%C3%B3gica+medicina+diagn%C3%B3stica+endere%C3%A7o!3m6!1s0x94cef62c1d7c945d:0x8e11d34a3ab45fd9!8m2!3d-23.5020952!4d-46.6271096!15sCi1jYXJkaW9sw7NnaWNhIG1lZGljaW5hIGRpYWduw7NzdGljYSBlbmRlcmXDp28iAkgBkgERZGlhZ25vc3RpY19jZW50ZXLgAQA!16s%2Fg%2F1tsyqx_6?entry=ttu"> <b>Rua Salete, 200</b></a></div>
-      <div class="px-2"><i class="bi bi-envelope-fill" ><a class="text-reset" target="_blank" rel="noopener noreferrer" href="mailto: agenda@cardiologica.net"><b>email@cardiologica.net</b></a> </i></div>
-      <div class="px-2"><i class="bi bi-telephone-fill"><a class="text-reset" target="_blank" rel="noopener noreferrer" href="tel:+551121396900"><b>(11) 2139-6900</b></a> </i></div>
+      <div class="px-2"><i class="bi bi-geo-alt-fill"></i><a class="text-reset" target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.google.com/maps/place/Cardiol%C3%B3gica+Medicina+Diagn%C3%B3stica/@-23.5017891,-46.6296408,17z/data=!3m1!5s0x94cef62912572b05:0xe31bc360c7afa97c!4m10!1m2!2m1!1scardiol%C3%B3gica+medicina+diagn%C3%B3stica+endere%C3%A7o!3m6!1s0x94cef62c1d7c945d:0x8e11d34a3ab45fd9!8m2!3d-23.5020952!4d-46.6271096!15sCi1jYXJkaW9sw7NnaWNhIG1lZGljaW5hIGRpYWduw7NzdGljYSBlbmRlcmXDp28iAkgBkgERZGlhZ25vc3RpY19jZW50ZXLgAQA!16s%2Fg%2F1tsyqx_6?entry=ttu">
+          <b>Rua Salete, 200, Cj. 92</b></a></div>
+      <div class="px-2"><i class="bi bi-envelope-fill"><a class="text-reset" target="_blank" rel="noopener noreferrer"
+            href="mailto: agenda@cardiologica.net"><b>email@cardiologica.net</b></a> </i></div>
+      <div class="px-2"><i class="bi bi-telephone-fill"><a class="text-reset" target="_blank" rel="noopener noreferrer"
+            href="tel:+551121396900"><b>(11) 2139-6900</b></a> </i></div>
     </div>
   </header>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="nav1">
     <div class="container-fluid ms-3 rounded">
       <a class="navbar-brand flutuante-text" href="index.html">
-        <img src="./cardMaisLogo.png" alt="Logo CardMais" width="70px" height="35px">
+        <img src="./imgs/cardMaisLogo.png" alt="Logo CardMais" width="70px" height="35px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
         aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,18 +54,13 @@
       <div class="collapse navbar-collapse" id="navCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active flutuante-text" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link flutuante-text" href="#divSobre">Quem Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link flutuante-text" href="#divEspecialidade">Especialidades</a>
+            <a class="nav-link flutuante-text" href="./saibaMais.html">Sobre Card+</a>
           </li>
           <li class="nav-item">
             <a class="nav-link flutuante-text" href="#divParceiro">Parceiros</a>
           </li>
         </ul>
+        <a class="btn btn-card-contra text-end flutuante-text" href="./formulario.html">Adquira já o seu</a>
       </div>
     </div>
   </nav>
@@ -68,54 +68,53 @@
   <div data-bs-spy="scroll" data-bs-target="#nav1" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
     class="scrollspy-example" tabindex="0">
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-      <div class="carousel-indicators">
+      <!-- <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+      </div> -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./pgInicial.jpg" class="d-block img-fluid" alt="" style="height: 520px; width: 100%;">
-          <!-- <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Exemplo</h1>
-              <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam.</p>
-              <p><a class="btn btn-lg btn-card" href="#">Sign up today</a></p>
+          <img src="./imgs/pgInicial.jpg" class="d-block img-fluid" alt="" style="height: 520px; width: 100%;">
+           <div class="container">
+            <div class="carousel-caption text-start"  style="color: #b5221b;">
+              <p>Para maiores esclarecimentos clique no botão!</p>
+              <p><a class="btn btn-lg btn-card-contra" href="./saibaMais.html">Saíba Mais</a></p>
             </div>
-          </div> -->
+          </div>
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <div class="div-img-carousel">
             <img src="./folderTomo.jpeg" class="d-block img-fluid" alt="" style="height: 520px; width: 100%;">
           </div>
-          <!-- <div class="container">
+          <div class="container">
             <div class="carousel-caption">
               <h1>Exemplo</h1>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, cum.</p>
               <p><a class="btn btn-lg btn-card" href="#">Learn more</a></p>
             </div>
-          </div> -->
-        </div>
-        <div class="carousel-item">
+          </div>
+        </div> -->
+        <!-- <div class="carousel-item">
           <img src="./FolderDomi.jpeg" class="d-block img-fluid" alt="..." style="height: 520px; width: 100%;">
-          <!-- <div class="container">
+          <div class="container">
             <div class="carousel-caption text-end">
               <h1>Exemplo</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, rem.</p>
               <p><a class="btn btn-lg btn-card" href="#">Browse gallery</a></p>
             </div>
-          </div> -->
-        </div>
+          </div>
+        </div> -->
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-      </button>
+      </button> -->
     </div>
 
 
@@ -124,23 +123,23 @@
 
     <div class="container marketing">
 
-      
+
       <div class="row text-center" id="miViVa">
         <div class="col-lg-4">
-          <img src="./rocket.svg" class="img-fluid" height="100" width="100">
+          <img src="./imgs/rocket.svg" class="img-fluid" height="100" width="100">
           <h2 class="fw-normal">Missão</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente necessitatibus omnis labore
             aliquid
             exercitationem nobis modi debitis nostrum quibusdam.</p>
         </div>
         <div class="col-lg-4">
-          <img src="./eye-fill.svg" class="img-fluid" alt="" height="100" width="100">
+          <img src="./imgs/eye-fill.svg" class="img-fluid" alt="" height="100" width="100">
           <h2 class="fw-normal">Visão</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, reprehenderit id qui recusandae rem
             blanditiis laborum laboriosam dolore esse voluptas!</p>
         </div>
         <div class="col-lg-4">
-          <img src="./heart-pulse-fill.svg" class="img-fluid" alt="" height="100" width="100">
+          <img src="./imgs/heart-pulse-fill.svg" class="img-fluid" alt="" height="100" width="100">
           <h2 class="fw-normal">Valores</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores vero ad velit eaque dignissimos
             obcaecati deleniti veniam, quidem voluptatem.</p>
@@ -153,50 +152,31 @@
 
       <div class="row featurette" id="divSobre">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">Sobre o<span style="color: #b5221b;"> Card+</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-            here.
+          <h2 class="featurette-heading fw-normal lh-1 fw-bold">Quem Somos</h2>
+          <p class="lead">O Cartão CARD+ foi Pensado e Criado para poder abranger a todos com os menores preços e uma grande gama de procedimentos.
+            
           </p>
+
         </div>
         <div class="col-md-5">
-          <img src="./frente.png" height="500" width="500" class="rounded-br-tl bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
-        </div>
-      </div>
-
-      <hr class="featurette-divider" style="color: red;">
-
-      <div class="row featurette" id="divEspecialidade">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Especialidades</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-            layout would work with some actual real-world content in place.</p>
-          <a class="btn btn-lg btn-card my-3 flutuante-text" href="#">Sign up today</a>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="rounded-bl-tr bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-              fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-          </svg>
+          <img src="./imgs/frente.png" height="500" width="500"
+            class="rounded-br-tl bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
         </div>
       </div>
 
       <hr class="featurette-divider" style="color: red;">
 
       <div class="row featurette" id="divParceiro">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Parceiros</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-            intended to be actually read, simply here to give you a better view of what this would look like with some
-            actual content. Your content.</p>
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1 fw-bold">Parceiros</h2>
+          <p class="lead">Aqui nós temos os melhores parceiros, clique para saber mais sobre as redes credenciadas.</p>
 
           <a class="btn btn-lg btn-card flutuante-text my-3" href="./parceiros.html">Saiba Mais</a>
 
         </div>
         <div class="col-md-5">
-          <img src="./p.jpg" alt="" width="500" height="500" class="rounded-br-tl bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+          <img src="./imgs/p.jpg" alt="" width="500" height="500"
+            class="rounded-br-tl bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
         </div>
       </div>
 
@@ -206,7 +186,25 @@
 
     </div>
 
-    
+
+
+    <!-- <div class="row text-center m-auto">
+      <div class="col-lg-6 p-5 bg-card">
+        <img src="./imgs/currency-dollar.svg" class="img-fluid" height="100" width="100">
+        <p class="fw-bold display-5">Por apenas</p>
+        <p class="fw-bolder display-1">R$ 50,00</p>
+        <p class="fw-medium fs-4">Anuais - Para o plano individual.</p>
+        <a class="btn btn-lg btn-card rounded-pill flutuante-text my-3 fs-4 fw-bold" href="./parceiros.html">Saiba Mais</a>
+      </div>
+      <div class="col-lg-6  p-4 bg-danger-subtle">
+        <img src="./imgs/eye-fill.svg" class="img-fluid" alt="" height="100" width="100">
+        <h2 class="fw-normal">Visão</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, reprehenderit id qui recusandae rem
+          blanditiis laborum laboriosam dolore esse voluptas!</p>
+      </div>
+    </div> -->
+
+
     <a data-bs-toggle="tooltip" data-bs-title="Tooltip on left"
       href="https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo" class="wpp flutuante"
       target="_blank">
@@ -219,15 +217,15 @@
 
 
   <footer class="text-center text-lg-start bg-light text-muted">
-    
+
     <section class="d-flex justify-content-center justify-content-lg-between p-4">
-      
+
       <div class="me-5 d-none d-lg-block">
         <span><b>Siga-nos nas Redes Sociais</b></span>
       </div>
-     
 
-      
+
+
       <div>
         <a href="" class="me-4 text-reset">
           <i class="bi bi-facebook flutuante-text" style="color: #b5221b;"></i>
@@ -242,7 +240,7 @@
           </b><i class="bi bi-instagram flutuante-text" style="color: #b5221b;"></i>
         </a>
       </div>
-      
+
 
 
     </section>
@@ -255,7 +253,7 @@
         <div class="row mt-3">
 
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center">
-            <img src="./cardMaisLogo.png" class="img-fluid" >
+            <img src="./imgs/cardMaisLogo.png" class="img-fluid">
             <p>
               Seu Cartão para descontos em exames.
             </p>
@@ -276,9 +274,9 @@
     </section>
 
     <div class="text-center p-4 mt-5" style="background-color: #b5221b;">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="cardiologica.net">Cardiológica Medicina Diagnóstica</a>
-  </div>
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="cardiologica.net">Cardiológica Medicina Diagnóstica</a>
+    </div>
 
   </footer>
 

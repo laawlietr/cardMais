@@ -49,3 +49,16 @@ font-size:30px;
 box-shadow: 1px 1px 2px #888;
 z-index:1000;
 }
+
+.li-img{
+  list-style-image: url('./imgs/check2-square.svg');
+}
+
+.field{
+  box-shadow: 0 0 15px;
+}
+
+.bg-card{
+  background-color: #b5231b;
+  color: white;
+}
